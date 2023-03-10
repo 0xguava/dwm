@@ -10,11 +10,11 @@ static const char *fonts[]          = { "JetBrains Mono:size=11:antialias=true:a
 static const char dmenufont[]       = "JetBrains Mono:size=11";
 static const unsigned int baralpha = 0xd0;
 static const unsigned int borderalpha = OPAQUE;
-static const char *upvol[]   = { "/home/adi/.local/bin/volup", NULL };
-static const char *downvol[] = { "/home/adi/.local/bin/voldn", NULL };
-static const char *mutevol[] = { "/home/adi/.local/bin/volmute", NULL };
-static const char *light_up[] = {"/home/adi/.local/bin/lightup", NULL};
-static const char *light_down[] = {"/home/adi/.local/bin/lightdn", NULL};
+static const char *upvol[]   = { "/home/adi/.local/bin/volctl/volup", NULL };
+static const char *downvol[] = { "/home/adi/.local/bin/volctl/voldn", NULL };
+static const char *mutevol[] = { "/home/adi/.local/bin/volctl/volmute", NULL };
+static const char *light_up[] = {"/home/adi/.local/bin/lightctl/lightup", NULL};
+static const char *light_down[] = {"/home/adi/.local/bin/lightctl/lightdn", NULL};
 
 #include "/home/adi/.cache/wal/colors-wal-dwm.h"
 #include <X11/XF86keysym.h>
