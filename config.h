@@ -6,7 +6,7 @@ static const unsigned int gappx     = 5;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "JetBrains Mono:size=11:antialias=true:autohint=true", "Font Awesome 6 Free Solid:style=Solid:size=11:antialias=true:autohint=true" };
+static const char *fonts[]          = { "JetBrains Mono:size=11:antialias=true:autohint=true", "Symbols Nerd Font Mono:style=1000-em:size=11:antialias=true:autohint=true" };
 static const char dmenufont[]       = "JetBrains Mono:size=11";
 static const unsigned int baralpha = 0xd0;
 static const unsigned int borderalpha = OPAQUE;
@@ -26,7 +26,7 @@ static const unsigned int alphas[][3]	={
 };
 
 /* tagging */
-static const char *tags[] = { "", "", "", "", "5", "6", "7", "8", "9" };
+static const char *tags[] = { "", "", "", "", "5", "6", "7", "8", "9" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -35,7 +35,7 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
-	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+	{ "Firefox",  NULL,       NULL,       1 << 1,       0,           -1 },
 };
 
 /* layout(s) */
