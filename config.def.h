@@ -6,7 +6,7 @@ static const unsigned int gappx     = 7;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "JetBrains Mono:size=11:antialias=true:autohint=true", "Symbols Nerd Font Mono:style=1000-em:size=11:antialias=true:autohint=true", "Noto Color Emoji:style=Regular:pixelsize=12:antialias=true:autohint=true" };
+static const char *fonts[]          = { "JetBrains Mono:size=11:antialias=true:autohint=true", "Symbols Nerd Font Mono:style=Regular:size=11:antialias=true:autohint=true", "Noto Color Emoji:style=Regular:pixelsize=12:antialias=true:autohint=true" };
 static const char dmenufont[]       = "JetBrains Mono:size=11";
 static const unsigned int baralpha = 0xd0;
 static const unsigned int borderalpha = OPAQUE;
@@ -21,7 +21,7 @@ static const unsigned int alphas[][3]	={
 };
 
 /* tagging */
-static const char *tags[] = { "󰍳", "","", "", "󰇮", "", "", "", "" };
+static const char *tags[] = { "󰍳", "","", "󰎈", "󰇮", "", "", "", "" };
 
 static const Rule rules[] = {
 	/* xprop(1):
