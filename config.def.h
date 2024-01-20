@@ -104,8 +104,11 @@ static const Key keys[] = {
 	{ 0,                       XF86XK_AudioLowerVolume, spawn, SHCMD("wpctl set-volume @DEFAULT_SINK@ 5%-; kill -44 $(pidof dwmblocks)") },
 	{ 0,                       XF86XK_AudioMute, spawn, 	   SHCMD("wpctl set-mute @DEFAULT_SINK@ toggle; kill -44 $(pidof dwmblocks)") },
 	{ 0,                       XF86XK_AudioRaiseVolume, spawn, SHCMD("wpctl set-volume @DEFAULT_SINK@ 5%+; kill -44 $(pidof dwmblocks)") },
-	{ 0,			   XF86XK_MonBrightnessUp, spawn,  SHCMD("xbacklight -inc 5; kill -44 $(pidof dwmblocks)") },
-	{ 0,			   XF86XK_MonBrightnessDown, spawn,SHCMD("xbacklight -dec 5; kill -44 $(pidof dwmblocks)") },
+	{ 0,			   XF86XK_MonBrightnessUp, spawn,  SHCMD("brightnessctl s +5%; kill -44 $(pidof dwmblocks)") },
+	{ 0,			   XF86XK_MonBrightnessDown, spawn,SHCMD("brightnessctl s 5%-; kill -44 $(pidof dwmblocks)") },
+  { 0, XF86XK_AudioPlay, spawn, SHCMD("mpc toggle; mpd_status") },
+  { 0, XF86XK_AudioNext, spawn, SHCMD("mpc next; mpd_status") },
+  { 0, XF86XK_AudioPrev, spawn, SHCMD("mpc prev; mpd_status") },
 };
 
 /* button definitions */
