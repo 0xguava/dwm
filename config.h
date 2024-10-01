@@ -21,7 +21,7 @@ static const unsigned int alphas[][3]	={
 };
 
 /* tagging */
-static const char *tags[] = { "󰍳", "","", "󰎈", "󰇮", "", "", "", "" };
+static const char *tags[] = { "󰍳", "","", "󰎈", "󰗚", "", "", "", "" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -30,8 +30,10 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "TelegramDesktop", NULL, NULL,      1 << 2,	    1,		 -1 },
-	{ "firefox",  NULL,       NULL,       1 << 1,       0,           -1 },
+	{ "Firefox",  NULL,       NULL,       1 << 1,       0,           -1 },
   { "obs",      NULL,       NULL,       1 << 5,       0,           -1 },
+  { "sioyek",   NULL,       NULL,       1 << 4,       0,           -1 },
+  { "com.github.johnfactotum.Foliate",   NULL,       NULL,       1 << 4,       0,           -1 },
 };
 
 /* layout(s) */
@@ -109,6 +111,7 @@ static const Key keys[] = {
   { 0, XF86XK_AudioPlay, spawn, SHCMD("mpc toggle; mpdstatus") },
   { 0, XF86XK_AudioNext, spawn, SHCMD("mpc next; mpdstatus") },
   { 0, XF86XK_AudioPrev, spawn, SHCMD("mpc prev; mpdstatus") },
+  { MODKEY, XK_o, spawn, SHCMD("sleep 0.5;xtrlock") },
 };
 
 /* button definitions */
