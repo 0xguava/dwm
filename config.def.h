@@ -112,6 +112,7 @@ static const Key keys[] = {
   { 0, XF86XK_AudioNext, spawn, SHCMD("mpc next; mpdstatus") },
   { 0, XF86XK_AudioPrev, spawn, SHCMD("mpc prev; mpdstatus") },
   { MODKEY, XK_o, spawn, SHCMD("sleep 0.5;xtrlock") },
+  { 0, XK_Print, spawn, SHCMD("shot") },
 };
 
 /* button definitions */
