@@ -8,12 +8,12 @@ static int showbar            = 1;        /* 0 means no bar */
 static int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "JetBrains Mono:size=11:antialias=true:autohint=true", "Symbols Nerd Font Mono:style=Regular:size=11:antialias=true:autohint=true", "Noto Color Emoji:style=Regular:pixelsize=12:antialias=true:autohint=true" };
 static char dmenufont[]       = "JetBrains Mono:size=11";
-static char normbgcolor[]           = "#02021B";
-static char normbordercolor[]       = "#8e9ea5";
-static char normfgcolor[]           = "#cce2ec";
-static char selfgcolor[]            = "#cce2ec";
-static char selbordercolor[]        = "#cce2ec";
-static char selbgcolor[]            = "#3B5986";
+static char normbgcolor[]           = "#243c3f";
+static char normbordercolor[]       = "#8e8885";
+static char normfgcolor[]           = "#ccc3bf";
+static char selfgcolor[]            = "#ccc3bf";
+static char selbordercolor[]        = "#ccc3bf";
+static char selbgcolor[]            = "#C49774";
 static char *colors[][3] = {
        /*               fg           bg           border   */
        [SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },
