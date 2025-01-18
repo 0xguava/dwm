@@ -39,12 +39,13 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "TelegramDesktop", NULL, NULL,      1 << 2,	    1,		 -1 },
-	{ "Firefox",  NULL,       NULL,       1 << 1,       0,           -1 },
-  { "obs",      NULL,       NULL,       1 << 5,       0,           -1 },
-  { "sioyek",   NULL,       NULL,       1 << 4,       0,           -1 },
-  { "com.github.johnfactotum.Foliate",   NULL,       NULL,       1 << 4,       0,           -1 },
+	/* class      instance    title       tags mask     iscentered   isfloating   monitor */
+	{ "TelegramDesktop", NULL, NULL,      1 << 2,	      0,            1,		       -1 },
+	{ "Firefox",  NULL,       NULL,       1 << 1,       0,            0,           -1 },
+  { "obs",      NULL,       NULL,       1 << 5,       0,            0,           -1 },
+  { "sioyek",   NULL,       NULL,       1 << 4,       0,            0,           -1 },
+  { "com.github.johnfactotum.Foliate",   NULL,       NULL,       1 << 4,       0,         0,           -1 },
+	{ "Sxiv",     NULL,       NULL,       0,            1,            1,           -1 },
 };
 
 /* layout(s) */
