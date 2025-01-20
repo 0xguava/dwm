@@ -22,7 +22,6 @@ static char *colors[][3] = {
 static const unsigned int baralpha = 0xd0;
 static const unsigned int borderalpha = OPAQUE;
 
-/* #include "/home/adi/.cache/wal/colors-wal-dwm.h" */
 #include <X11/XF86keysym.h>
 
 static const unsigned int alphas[][3]	={
