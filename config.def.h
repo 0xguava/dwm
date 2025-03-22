@@ -144,6 +144,7 @@ static const Key keys[] = {
   { 0, XF86XK_AudioNext, spawn, SHCMD("mpc next; mpdstatus") },
   { 0, XF86XK_AudioPrev, spawn, SHCMD("mpc prev; mpdstatus") },
   { MODKEY, XK_o, spawn, SHCMD("sleep 0.5;xtrlock") },
+  { MODKEY|ShiftMask, XK_o, spawn, SHCMD("sleep 0.5;loginctl suspend;xtrlock") },
   { 0, XK_Print, spawn, SHCMD("shot -p") },
 	{ MODKEY|ShiftMask, XK_s, spawn, SHCMD("sxiv -tb $HOME/pix/wallp") },
 };
