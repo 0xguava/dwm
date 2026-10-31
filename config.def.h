@@ -31,7 +31,7 @@ static const unsigned int alphas[][3]	={
 };
 
 /* tagging */
-static const char *tags[] = { "󰍳", "","", "󰎈", "󰗚", "", "", "", "" };
+static const char *tags[] = { "󰍳", "","", "󰎈", "󰗚", "", "", "", "" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -40,7 +40,7 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     iscentered   isfloating   monitor */
 	{ "TelegramDesktop", NULL, NULL,      1 << 2,	      0,            1,		       -1 },
-	{ "Firefox",  NULL,       NULL,       1 << 1,       0,            0,           -1 },
+	{ "firefox",  NULL,       NULL,       1 << 1,       0,            0,           -1 },
   { "obs",      NULL,       NULL,       1 << 5,       0,            0,           -1 },
   { "sioyek",   NULL,       NULL,       1 << 4,       0,            0,           -1 },
   { "com.github.johnfactotum.Foliate",   NULL,       NULL,       1 << 4,       0,         0,           -1 },
